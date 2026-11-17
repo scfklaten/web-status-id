@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const guides = [
+  ['Mulai menggunakan WebStatus', 'Gambaran awal tentang website, akun, dan hal yang perlu disiapkan.', '/docs/mulai/'],
+  ['Mengubah konten website', 'Cara meminta bantuan AI untuk memperbarui informasi.', '/docs/kelola-konten/'],
+  ['Menambahkan artikel', 'Alur menyiapkan artikel baru agar siap diterbitkan.', '/docs/tambah-artikel/'],
+  ['Mengganti gambar', 'Panduan memilih dan menyiapkan gambar website.', '/docs/ganti-gambar/'],
+  ['Bantuan dan pemecahan masalah', 'Hal yang perlu diperiksa ketika perubahan belum tampil.', '/docs/bantuan/']
+];
+---
+<BaseLayout title="Panduan — WebStatus" description="Panduan penggunaan dan pengelolaan website WebStatus.">
+  <header class="wrap head"><a href="/" class="brand">web<span>status</span><i>.</i></a><a href="/">← Kembali ke beranda</a></header>
+  <main class="wrap docs"><div class="eyebrow">Pusat panduan</div><h1>Website-mu,<br /><em>lebih mudah dikelola.</em></h1><p class="lead">Panduan singkat untuk memahami website dan mengelola kontennya dengan bantuan AI. Kamu tidak perlu menghafal istilah teknis.</p>
+  <div class="guides">{guides.map(([title, desc, href], i) => <a class="guide" href={href}><span>0{i+1}</span><div><h2>{title}</h2><p>{desc}</p></div><b>↗</b></a>)}</div>
+  <p class="note">Panduan ini bersifat umum. Langkah yang tersedia dapat berbeda sesuai platform, akses akun, dan konfigurasi website masing-masing.</p></main>
+  <footer class="wrap foot">WebStatus · Website semudah bikin status.</footer>
+</BaseLayout>
+<style>
+.head{height:82px;display:flex;align-items:center;justify-content:space-between}.head a:last-child{font-size:.85rem;text-decoration:none;color:#68756b}.brand{font:800 1.5rem Manrope,sans-serif;letter-spacing:-.08em;text-decoration:none}.brand span{font-weight:500}.brand i{font-style:normal;color:#df8957}.docs{padding:70px 0 110px}.docs h1{font:800 clamp(3rem,6vw,5rem)/1.05 Manrope,sans-serif;letter-spacing:-.07em;margin:25px 0}.docs h1 em{font-style:normal;color:#66866b}.lead{max-width:620px;color:#69756c;line-height:1.8;font-size:1.05rem}.guides{margin-top:55px;border-top:1px solid #e0e5dc}.guide{display:grid;grid-template-columns:50px 1fr 25px;gap:15px;align-items:center;padding:23px 8px;border-bottom:1px solid #e0e5dc;text-decoration:none}.guide>span{color:#9aa69a;font-size:.75rem}.guide h2{font:700 1.1rem Manrope;margin:0 0 6px;letter-spacing:-.03em}.guide p{margin:0;color:#778178;font-size:.88rem;line-height:1.5}.guide b{color:#628267}.guide:hover h2{color:#628267}.note{margin-top:30px;color:#818b82;font-size:.82rem;line-height:1.7}.foot{border-top:1px solid #e0e5dc;padding:25px 0;color:#8a948a;font-size:.8rem}
+</style>
