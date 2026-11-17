@@ -1,0 +1,32 @@
+---
+const { title = 'WebStatus — Website semudah bikin status', description = 'Punya website sendiri. Kelola kontennya dengan bantuan chat dan AI.' } = Astro.props;
+---
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://webstatus.id').toString()} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root { font-family: 'DM Sans', sans-serif; color: #17231d; background: #f7f7f2; font-synthesis: none; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  a { color: inherit; }
+  .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+  .eyebrow { color: #53765d; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 19px; border-radius: 999px; background: #183e2b; color: white; text-decoration: none; font-weight: 700; }
+  .button.secondary { background: transparent; color: #183e2b; border: 1px solid #cbd5ca; }
+  @media (max-width: 640px) { .wrap { width: min(100% - 32px, 1120px); } }
+</style>
