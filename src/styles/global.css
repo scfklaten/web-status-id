@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #345bd6;
+  --color-body: rgb(var(--color-bg));
+  --color-box-bg: rgb(var(--color-box));
+  --color-box-border: rgb(var(--box-border));
+  --color-box-shadow: rgb(var(--box-shadow));
+  --color-heading-1: rgb(var(--heading-1));
+  --color-heading-2: rgb(var(--heading-2));
+  --color-heading-3: rgb(var(--heading-3));
+}
+
+:root {
+  color-scheme: light;
+  --color-bg: 248 250 252;
+  --color-box: 255 255 255;
+  --box-border: 226 232 240;
+  --box-shadow: 15 23 42 / 0.06;
+  --heading-1: 15 23 42;
+  --heading-2: 51 65 85;
+  --heading-3: 100 116 139;
+}
+.dark {
+  color-scheme: dark;
+  --color-bg: 3 7 18;
+  --color-box: 17 24 39;
+  --box-border: 55 65 81;
+  --box-shadow: 0 0 0 / 0;
+  --heading-1: 248 250 252;
+  --heading-2: 226 232 240;
+  --heading-3: 148 163 184;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: "Raleway", ui-sans-serif, system-ui, sans-serif; }
+::selection { background: rgb(52 91 214 / .2); }
