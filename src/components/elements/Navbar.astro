@@ -1,0 +1,30 @@
+---
+const links = [
+  { href: '/', label: 'Beranda' },
+  { href: '/#pilih-layanan', label: 'Layanan' },
+  { href: '/website-ai/', label: 'Astro + GPT' },
+  { href: '/vps-hermes/', label: 'VPS + Hermes' }
+];
+---
+<header class="absolute inset-x-0 top-0 z-50">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
+    <a href="/" class="flex items-center gap-3" aria-label="WebStatus beranda">
+      <span class="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-primary text-lg font-bold text-white shadow-lg shadow-primary/20">W<span class="absolute -right-1 -top-2 h-4 w-4 rounded-full bg-emerald-400"></span></span>
+      <span class="text-xl font-extrabold tracking-tight text-heading-1">webstatus<span class="text-primary">.</span></span>
+    </a>
+    <nav data-navbar class="absolute left-4 right-4 top-[4.7rem] hidden rounded-2xl border border-box-border bg-box-bg p-5 shadow-xl lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+      <ul class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+        {links.map((link) => <li><a href={link.href} class="text-sm font-semibold text-heading-2 transition hover:text-primary">{link.label}</a></li>)}
+      </ul>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button data-switch-theme type="button" aria-label="Ganti mode terang atau gelap" class="flex h-11 w-11 items-center justify-center rounded-full border border-box-border bg-box-bg text-heading-2 transition hover:border-primary hover:text-primary">
+        <svg class="h-5 w-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <svg class="hidden h-5 w-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.5 15.5A8.5 8.5 0 018.5 3.5 8.5 8.5 0 1020.5 15.5Z"/></svg>
+      </button>
+      <button data-toggle-nav type="button" aria-expanded="false" aria-label="Buka menu" class="flex h-11 w-11 items-center justify-center rounded-full border border-box-border bg-box-bg text-heading-2 lg:hidden">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
