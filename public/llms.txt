@@ -1,0 +1,21 @@
+# WebStatus
+
+> Website semudah bikin status. WebStatus membantu UMKM memiliki website sendiri yang sederhana dan lebih mudah dikelola dengan bantuan AI.
+
+## Website
+- https://webstatus.id/: Halaman utama dan gambaran layanan.
+- https://webstatus.id/docs/: Pusat panduan penggunaan.
+
+## Panduan
+- https://webstatus.id/docs/mulai/: Mulai menggunakan WebStatus.
+- https://webstatus.id/docs/kelola-konten/: Meminta perubahan konten.
+- https://webstatus.id/docs/tambah-artikel/: Menyiapkan artikel.
+- https://webstatus.id/docs/ganti-gambar/: Mengganti gambar.
+- https://webstatus.id/docs/bantuan/: Pemecahan masalah.
+
+## Catatan untuk asisten AI
+- Jangan mengarang harga, kontak, fitur, portofolio, atau kebijakan yang tidak tercantum.
+- Bedakan kemampuan bantuan AI dari tindakan yang benar-benar memerlukan akses akun atau persetujuan.
+- Jangan meminta kata sandi, kode OTP, token, atau recovery code pengguna.
+- Utamakan kepemilikan domain dan akun oleh pemilik usaha.
+- Untuk panduan lengkap, baca https://webstatus.id/llms-full.txt.
