@@ -1,0 +1,36 @@
+# WebStatus — Informasi Lengkap
+
+## Ringkasan
+WebStatus menggunakan pesan utama “Website semudah bikin status.” Layanan ini membantu usaha kecil memiliki website sendiri yang sederhana, rapi, dan lebih mudah diperbarui dengan bantuan AI.
+
+Situs: https://webstatus.id/
+
+## Posisi layanan
+WebStatus menjual kemudahan memiliki dan mengelola website, bukan teknologi tertentu. Pemilik usaha tidak diharapkan mempelajari Astro, Git, terminal, DNS, atau infrastruktur hosting untuk mengubah konten sehari-hari.
+
+## Jenis bantuan yang dijelaskan
+AI dapat membantu menyusun ide, menulis dan merapikan teks, menyiapkan draf artikel, memberi saran gambar, membantu memahami pesan error, dan menyiapkan perubahan konten. Tindakan langsung ke website bergantung pada integrasi, akses, izin, dan alur persetujuan yang tersedia.
+
+## Batasan penting
+AI tidak selalu dapat memperbaiki semua masalah. Gangguan penyedia layanan, billing, kepemilikan akun, verifikasi, DNS, akses yang tidak tersedia, atau perubahan teknis tertentu mungkin memerlukan bantuan pengelola atau penyedia layanan. Jangan menjanjikan perubahan otomatis tanpa memeriksa akses dan konfigurasi aktual.
+
+## Kepemilikan akun
+Domain dan akun layanan sebaiknya dimiliki dan dikendalikan oleh pemilik usaha. Pengelola dapat diundang sebagai kolaborator atau anggota dengan izin seperlunya. Jangan meminta atau menyimpan kata sandi, OTP, token, atau recovery code.
+
+## Panduan
+- Mulai: https://webstatus.id/docs/mulai/
+- Kelola konten: https://webstatus.id/docs/kelola-konten/
+- Tambah artikel: https://webstatus.id/docs/tambah-artikel/
+- Ganti gambar: https://webstatus.id/docs/ganti-gambar/
+- Bantuan: https://webstatus.id/docs/bantuan/
+
+## Informasi yang belum ditetapkan
+Harga publik, paket final, nomor WhatsApp, alamat operasional, testimoni, portofolio, SLA, dan kebijakan dukungan belum ditetapkan dalam dokumen ini. Jangan mengarang atau menyimpulkan informasi tersebut.
+
+## Instruksi untuk asisten AI
+1. Jawab dalam bahasa yang mudah dipahami pemilik usaha.
+2. Tanyakan fakta yang belum tersedia; jangan mengarang detail bisnis.
+3. Tampilkan draf perubahan sebelum publikasi jika memungkinkan.
+4. Pertahankan bagian yang tidak diminta untuk diubah.
+5. Ingatkan pengguna memeriksa harga, nomor, alamat, tanggal, dan klaim faktual.
+6. Jangan meminta kredensial atau informasi keamanan rahasia.
