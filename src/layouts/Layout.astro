@@ -1,0 +1,46 @@
+---
+import Navbar from '../components/elements/Navbar.astro';
+import Footer from '../components/elements/Footer.astro';
+import '../styles/global.css';
+const { title = 'WebStatus', description = 'Website semudah ngobrol.' } = Astro.props;
+---
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://webstatus.id').toString()} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-body font-sans text-heading-1 antialiased">
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<script>
+  const themeToggle = document.querySelector('[data-switch-theme]');
+  const savedTheme = localStorage.getItem('appTheme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.classList.toggle('dark', savedTheme ? savedTheme === 'dark' : prefersDark);
+  themeToggle?.addEventListener('click', () => {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('appTheme', dark ? 'dark' : 'light');
+  });
+  const menuToggle = document.querySelector('[data-toggle-nav]');
+  const menu = document.querySelector('[data-navbar]');
+  menuToggle?.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    menu?.classList.toggle('hidden', open);
+  });
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+    menu.classList.add('hidden');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  }));
+</script>
