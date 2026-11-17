@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Astro + ChatGPT — WebStatus" description="Website statis yang dikelola lewat percakapan dengan ChatGPT.">
+  <main class="mx-auto max-w-5xl px-5 pb-24 pt-32 sm:px-8 lg:px-10">
+    <a href="/" class="text-sm font-semibold text-primary hover:underline">← Kembali ke beranda</a>
+    <p class="mt-12 text-sm font-bold uppercase tracking-[.18em] text-emerald-600">Untuk UMKM pemula</p>
+    <h1 class="mt-5 max-w-4xl text-4xl font-bold tracking-tight text-heading-1 sm:text-6xl">Website yang bisa kamu kelola cukup dengan ngobrol.</h1>
+    <p class="mt-7 max-w-3xl text-lg leading-8 text-heading-3">Tidak perlu belajar dashboard CMS, Git, atau hosting. Sampaikan kebutuhanmu melalui aplikasi ChatGPT—bisa dengan mengetik atau menggunakan suara.</p>
+    <div class="mt-12 grid gap-5 sm:grid-cols-2">
+      {[
+        ['Ubah konten','Perbarui teks, deskripsi layanan, jam buka, informasi usaha, dan konten lain.'],
+        ['Atur tampilan','Minta bantuan mengubah warna, font, atau elemen visual yang memang disediakan untuk dikustomisasi.'],
+        ['Buat artikel','Cari ide, susun draf, edit, dan siapkan artikel untuk diterbitkan.'],
+        ['Tanpa dashboard teknis','Hosting, deployment, dan urusan infrastruktur ditangani WebStatus.']
+      ].map(([title,desc],i)=><article class="rounded-3xl border border-box-border bg-box-bg p-7 shadow-lg shadow-box-shadow"><span class="text-sm font-bold text-primary">0{i+1}</span><h2 class="mt-5 text-xl font-bold text-heading-1">{title}</h2><p class="mt-3 leading-7 text-heading-3">{desc}</p></article>)}
+    </div>
+    <div class="mt-12 rounded-3xl bg-box-bg p-8 shadow-lg shadow-box-shadow sm:p-10">
+      <h2 class="text-2xl font-bold text-heading-1">Bagaimana cara kerjanya?</h2>
+      <ol class="mt-6 list-inside list-decimal space-y-3 leading-7 text-heading-2">
+        <li>Buka aplikasi ChatGPT dan gunakan percakapan yang terhubung ke website.</li>
+        <li>Katakan perubahan yang kamu inginkan, dengan suara atau teks.</li>
+        <li>Periksa draf atau pratinjau perubahan.</li>
+        <li>Setujui tindakan yang perlu dipublikasikan.</li>
+      </ol>
+      <p class="mt-6 text-sm leading-6 text-heading-3">Kemampuan aktual mengikuti integrasi dan izin yang dikonfigurasi. Perubahan teknis tertentu tetap memerlukan bantuan WebStatus.</p>
+    </div>
+    <a href="https://wa.me/6282218228282" target="_blank" rel="noopener noreferrer" class="mt-10 inline-flex rounded-full bg-primary px-7 py-4 font-semibold text-white">Diskusikan website Astro ↗</a>
+  </main>
+</Layout>
