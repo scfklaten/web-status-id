@@ -1,8 +1,12 @@
 # WebStatus
 
-Website semudah bikin status.
+Website semudah ngobrol.
 
-WebStatus membantu UMKM memiliki website sendiri yang sederhana, rapi, dan mudah diperbarui dengan bantuan AI.
+## Stack
+
+- Astro 7
+- Tailwind CSS 4
+- Vite plugin for Tailwind CSS
 
 ## Development
 
@@ -17,16 +21,10 @@ npm run dev
 npm run build
 ```
 
-Hasil build statis berada di folder `dist/`, siap dipublikasikan melalui Cloudflare Pages.
+The static output is generated in `dist/` for Cloudflare Pages.
 
-## Struktur
+## Theme attribution
 
-- `src/pages/` — halaman website
-- `src/layouts/` — layout bersama
-- `src/pages/docs/` — panduan penggunaan
-- `public/llms.txt` — indeks informasi untuk AI
-- `public/llms-full.txt` — informasi lengkap untuk AI
+The visual foundation is adapted from [AgenceX](https://astro.build/themes/details/agencex/), originally created by Johnkat Mj and distributed under the MIT License. The Astro 7 / Tailwind CSS 4-compatible fork used as the implementation reference is [uno-forge-hub/agency-landing-page-Astrojs](https://github.com/uno-forge-hub/agency-landing-page-Astrojs).
 
-## Catatan
-
-Informasi harga, nomor WhatsApp, portofolio, dan detail paket belum dipublikasikan sampai dikonfirmasi.
+See `LICENSE` for the original MIT license notice.
